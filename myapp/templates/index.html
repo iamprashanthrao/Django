@@ -1,0 +1,37 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for i in posts %}
+
+
+<div _ngcontent-c19="" class="row">
+      <div _ngcontent-c19="" class="col-md-4 padding-zero">
+        <div _ngcontent-c19="" class=" mat-card productcard ">
+          <h3>{{i.title}}</h3><br>
+<img src="{{i.image.url}}" width="400" height="400"><br>
+ {{i.description}}<br>
+ <div _ngcontent-c19="" class="flex-row ">
+            <a _ngcontent-c19="" class="uppercase mat-raised-button mat-primary" href="/chicken">Order</a><br><br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endfor %}
+
+<div>
+	<h2>Hi Dear Valuble customers..</h2>
+	<h3>Why choose Natu Kodi?</h3>
+	<li>We rear pure natu kodi / country chicken in traditional way</li>
+	<li>Muscle over Fat - Contrary to Broiler hen, Natu Kodi has more muscle and less fat</li>
+	<li>Open Grazing - Our farm has sample space for open grazing, keeps the birds active, free and healthier</li>
+	<li>Flavour and Texture - We make our own feed which is inspired from hen's natural diet. This gives the meat complex flavor and texture, while broiler have a monotonous flavour</li>
+	<li>Healthy and Safe - We do not use growth harmones, steroids or any substance that regulates growth. Birds grow organically, taking their sweet time</li>
+	<li>Stress free birds - We limit our number of animals to avoid over-crowdin, pecking and stress</li><br><br>
+	<p>Give us one opportunity to serve you with the best natu kodi meat experience. We delivered all over Hyderabad</p>
+
+</div>
+
+{% endblock %}
