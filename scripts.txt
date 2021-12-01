@@ -1,0 +1,15 @@
+pip install virtualenv
+virtualenv env1
+./env1/Scripts/activate
+
+
+
+python manage.py makemigration
+python manage.py migrate
+python mange.py createsuperuser
+
+
+createing application---
+python manage.py startapp myapp
+
+git config --global user.email "aprao94@gmail.com"
