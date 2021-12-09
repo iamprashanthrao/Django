@@ -3,6 +3,10 @@ virtualenv env1
 ./env1/Scripts/activate
 
 
+env1\Scripts\activate
+
+
+
 
 python manage.py makemigration
 python manage.py migrate

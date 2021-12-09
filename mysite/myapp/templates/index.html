@@ -2,31 +2,28 @@
 {% extends 'base.html' %}
 {%  load static %}
 
-
 {% block content %}
+	<link rel="stylesheet"  href="{% static 'stylesheet.css' %}">
 
-{% for i in posts %}
-
-<link rel="stylesheet" type="text/css" href="{% static 'stylesheet.css' %}">
 <div class="container">
- <div class="col-sm-4">
-		<div  class="box">
- <div class="title">
- 	<h2>{{i.title}}</h2>
- </div>
-<div class="image">
-	<img src="{{i.image.url}}" width="400" height="400">
-</div>
-<div class="des">{{i.description}}
-</div>
-
-	<button class="button">Order</button>
-
-</div>
-</div>	
-</div>
-
+  <div class="row">
+  		{% for i in posts %}
+    <div class="col-md-4">
+    	<div class="box">
+    	<div class="title">
+    		<h2>{{i.title}}</h2>
+    	</div>
+    	<div class="image">
+    		<img src="{{i.image.url}}" width="400" height="400">
+    	</div>
+    	<div class="des">{{i.description}}
+    	</div>
+    	<button class="button">Order</button>
+    	</div>
+    	</div>
 {% endfor %}
+    </div>
+    </div>
 
 <div class="blog">
 	<h2>Hi Dear Valuble customers..</h2>
